@@ -1,0 +1,47 @@
+name: Bug Report
+description: Report a bug or issue in the project
+title: "[BUG]: "
+labels: ["bug"]
+
+body:
+
+* type: textarea
+  id: description
+  attributes:
+  label: Bug Description
+  description: Describe the bug clearly.
+  placeholder: Explain the issue...
+  validations:
+  required: true
+
+* type: textarea
+  id: steps
+  attributes:
+  label: Steps to Reproduce
+  description: How can we reproduce the issue?
+  placeholder: |
+  1. Go to...
+  2. Click on...
+  3. Observe...
+  validations:
+  required: true
+
+* type: textarea
+  id: expected
+  attributes:
+  label: Expected Behavior
+  description: What should happen?
+  validations:
+  required: true
+
+* type: textarea
+  id: screenshots
+  attributes:
+  label: Screenshots
+  description: Add screenshots if applicable.
+
+* type: input
+  id: browser
+  attributes:
+  label: Browser
+  placeholder: Chrome, Firefox, Edge, etc.
